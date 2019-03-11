@@ -121,6 +121,9 @@ public class BillDetailFragment extends Fragment {
 
 //        Show Status
         boolean status = getArguments().getBoolean("Status");
+
+        Log.d("11MarV1", "Status ==> " + status);
+
         if (status) {
             TextView textView = getView().findViewById(R.id.txtMember);
             textView.setText("mid ==> " + midString);
@@ -171,7 +174,11 @@ public class BillDetailFragment extends Fragment {
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                getActivity().finish();
+                Intent intent = new Intent(getActivity(), ServiceActivity.class);
                 getActivity().finish();
+                startActivity(intent);
+
             }
         });
     }
