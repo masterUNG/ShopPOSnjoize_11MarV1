@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="0dp"
-        android:height="1dp"
-        android:layout_height="wrap_content" />
+    <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:height="1dp"-->
+        <!--android:layout_height="wrap_content" />-->
 
     <LinearLayout
         android:orientation="horizontal"
@@ -31,6 +31,11 @@
             android:background="#ffffff"
             android:layout_height="wrap_content" />
 
+        <ImageView
+            android:id="@+id/imvDecrese"
+            android:src="@drawable/ic_action_noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <!--Amount-->
         <TextView
@@ -40,6 +45,12 @@
             android:text="10"
             android:layout_weight="1"
             android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imvIncrease"
+            android:src="@drawable/ic_action_arrow"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
